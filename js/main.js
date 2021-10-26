@@ -12,7 +12,6 @@ let books = [
   },
 ];
 
-
 function addBooks() {
   const titleInput = document.getElementById('titleInput').value;
   const authorInput = document.getElementById('authorInput').value;
@@ -26,13 +25,12 @@ function addBooks() {
 
 function removeBook(n) {
   books.splice(n, 1);
-  if (books.length == 0) {
+  if (books.length === 0) {
     localStorage.clear();
-    return books;
-  } else {
+  }else {
     localStorage.setItem('books', JSON.stringify(books));
-    return books;
   }
+  return books;
 }
 
 function render() {
@@ -70,9 +68,8 @@ addButton.addEventListener('click', (event) => {
 window.addEventListener('load', () => {
   if (localStorage.getItem('books') === null) {
     render();
-  }
-  else {
-  books = JSON.parse(localStorage.getItem('books'));
-  render();
+  }else {
+    books = JSON.parse(localStorage.getItem('books'));
+    render();
   }
 });
