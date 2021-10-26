@@ -5,20 +5,22 @@ const bookList = document.querySelector('.bookList');
 
 let books = [];
 
+
+
 function addBooks() {
   const titleInput = document.getElementById('titleInput').value;
   const authorInput = document.getElementById('authorInput').value;
-  const title = titleInput;
-  const author = authorInput;
   const n = books.length;
   books[n] = {
-    title: title,
-    author: author,
+    title: titleInput,
+    author: authorInput,
   }
+  localStorage.setItem('books', JSON.stringify(books));
 };
 
 function removeBook(n) {
   books.splice(n, 1);
+  localStorage.setItem('books', JSON.stringify(books));
   return books;
 }
 
@@ -49,14 +51,7 @@ addButton.addEventListener('click', () => {
   render();
 });
 
-
-
-
-// const removeButton = document.querySelectorAll('.removeButton');
-// for (let i = 0; i < removeButton.length; i += 1) {
-//   removeButton[i].addEventListener('click', () => {
-//     removeBook(1);
-//     render();
-//     console.log('cick')
-//   });
-// }
+window.addEventListener('load', () => {
+  books = JSON.parse(localStorage.getItem('books'));
+  render();
+});
