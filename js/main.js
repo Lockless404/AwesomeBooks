@@ -45,7 +45,7 @@ addButton.addEventListener('click', (event) => {
   const titleInput = document.getElementById('titleInput').value;
   const authorInput = document.getElementById('authorInput').value;
   if (titleInput && authorInput) {
-    event.preventDefault;
+    event.preventDefault();
     bookList.innerHTML = '';
     addBooks();
     render();
