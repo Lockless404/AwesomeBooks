@@ -1,76 +1,58 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# Awesome Books
 
-# Project Name
-
-> One paragraph statement about the project.
+> Fisrt project for module 2 of Microverse. It's a webstie which allows one to add and remove books one wishes to purchase. Sort of like a cart on a online market.
 
 ![screenshot](./app_screenshot.png)
 
-Additional description about the project and its features.
-
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Javascript, CSS and html
+- Linters
+- Github
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://lockless404.github.io/AwesomeBooks/)
 
 
 ## Getting Started
+To get a local copy up and running in your machine:
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+    1.Clone this repo or download the zip folder:
 
+      git clone https://github.com/Lockless404/Portfolio.git
 
-To get a local copy up and running follow these simple example steps.
+    2.Navigate to the location of the folder in your machine:
+
+      you@your-Pc-name:~$ cd <folder>
 
 ### Prerequisites
 
+- none
+
 ### Setup
+
+- Potato PC
 
 ### Install
 
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+- A Web brower.... You savage.
 
 ## Authors
 
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 **Hamza Bin Ali Tarar**
+- GitHub: [@Lockless404](https://github.com/lockless404)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Lockless404/AwesomeBooks/issues).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is unlicensed.
