@@ -1,11 +1,7 @@
-const titleOutput = document.getElementById('titleOutput');
-const authorOutput = document.getElementById('authorOutput');
 const addButton = document.getElementById('addButton');
 const bookList = document.querySelector('.bookList');
 
 let books = [];
-
-
 
 function addBooks() {
   const titleInput = document.getElementById('titleInput').value;
@@ -14,9 +10,9 @@ function addBooks() {
   books[n] = {
     title: titleInput,
     author: authorInput,
-  }
+  };
   localStorage.setItem('books', JSON.stringify(books));
-};
+}
 
 function removeBook(n) {
   books.splice(n, 1);
