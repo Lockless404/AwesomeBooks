@@ -27,7 +27,7 @@ function removeBook(n) {
   books.splice(n, 1);
   if (books.length === 0) {
     localStorage.clear();
-  }else {
+  } else {
     localStorage.setItem('books', JSON.stringify(books));
   }
   return books;
@@ -68,7 +68,7 @@ addButton.addEventListener('click', (event) => {
 window.addEventListener('load', () => {
   if (localStorage.getItem('books') === null) {
     render();
-  }else {
+  } else {
     books = JSON.parse(localStorage.getItem('books'));
     render();
   }
