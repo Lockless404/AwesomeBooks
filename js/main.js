@@ -1,7 +1,17 @@
 const addButton = document.getElementById('addButton');
 const bookList = document.querySelector('.bookList');
 
-let books = null;
+let books = [
+  {
+    title: 'The Winds Of Winter',
+    author: 'George R. R. Martin',
+  },
+  {
+    title: 'The Doors of Stone',
+    author: 'Patrick Rothfuss',
+  },
+];
+
 
 function addBooks() {
   const titleInput = document.getElementById('titleInput').value;
@@ -53,6 +63,9 @@ addButton.addEventListener('click', (event) => {
 });
 
 window.addEventListener('load', () => {
+  if (localStorage.length > 1) {
   books = JSON.parse(localStorage.getItem('books'));
   render();
+  }
+  else render();
 });
