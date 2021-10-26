@@ -26,8 +26,13 @@ function addBooks() {
 
 function removeBook(n) {
   books.splice(n, 1);
-  localStorage.setItem('books', JSON.stringify(books));
-  return books;
+  if (books.length == 0) {
+    localStorage.clear();
+    return books;
+  } else {
+    localStorage.setItem('books', JSON.stringify(books));
+    return books;
+  }
 }
 
 function render() {
@@ -63,9 +68,11 @@ addButton.addEventListener('click', (event) => {
 });
 
 window.addEventListener('load', () => {
-  if (localStorage.length > 1) {
+  if (localStorage.getItem('books') === null) {
+    render();
+  }
+  else {
   books = JSON.parse(localStorage.getItem('books'));
   render();
   }
-  else render();
 });
