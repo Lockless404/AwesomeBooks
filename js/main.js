@@ -1,7 +1,7 @@
 const addButton = document.getElementById('addButton');
 const bookList = document.querySelector('.bookList');
 
-let books = [];
+let books = null;
 
 function addBooks() {
   const titleInput = document.getElementById('titleInput').value;

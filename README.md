@@ -12,7 +12,7 @@
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://lockless404.github.io/AwesomeBooks/)
 
 
 ## Getting Started
